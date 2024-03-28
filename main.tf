@@ -58,5 +58,5 @@ resource "google_compute_firewall" "allow-flask" {
 }
 
 output "public_ip" {
-  value = google_compute_instance.example_instance.network_interface.0.access_config.0.assigned_nat_ip
+  value = google_compute_instance.example_instance.network_interface.0.access_config.0.nat_ip
 }
